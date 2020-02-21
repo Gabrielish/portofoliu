@@ -82,6 +82,7 @@ body img {
     height: 100%;
     z-index: 99999;
     background-color: #232329;
+    
 }
 
 .doc-loader img {
@@ -132,9 +133,11 @@ a.button:hover {
 /* Translate Buttons */
 
 .translate {
+    z-index: 2;
+    position: relative;
     display: inline-block;
     color: #faefff;
-    border: 2px solid #6db363;
+    border: 2px solid #60a058;
     background-color: transparent;
     text-align: center;
     padding: 5px 20px;
@@ -145,22 +148,29 @@ a.button:hover {
     transition: all .2s linear;
     outline: transparent;
     box-shadow: 0 2px #60a058;
-    
+    font-weight: bold;
+
 }
 
 .translate:hover{
     color: white;
-    background-color: #6db363;
+    background-color: #60a058;
     
     
 }
 
 
 button.selected{
-    background-color: #6db363;
+    background-color: #60a058;
     transform: translateY(1px);
 
   }
+
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
 
 /* ===================================
     3. Left Part Content (Sidebar) CSS
@@ -279,7 +289,7 @@ button.selected{
 .top-pagination {
     position: relative;
     z-index: 2;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .top-pagination > div {
@@ -1295,6 +1305,7 @@ p.skill-circle-text {
 .contact-form {
     padding: 65px;
     background-color: #6DB363;
+    
 }
 
 .contact-form p {
@@ -1511,6 +1522,7 @@ p.contact-submit-holder {
 
     .top-pagination,
     .my-info-wrapper,
+    .translate,
     .big-num {
         display: none;
     }
@@ -1582,6 +1594,16 @@ p.contact-submit-holder {
         float: right;
     }
 
+    .translate-div {
+        float: right;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+
+    .translate {
+        display: inline-block;
+        padding-right: 20px;
+    }
     .content-right {
         margin-left: 0;
         width: 100%;        
@@ -1639,9 +1661,9 @@ p.contact-submit-holder {
 
 @media screen and (max-height: 880px) {    
 
-    .big-num {
+    /* .big-num {
         display: none;
-    }
+    } */
 
 }
 
